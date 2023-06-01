@@ -219,10 +219,9 @@ monogatari.script ({
 		// PROLOGUE //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		'play music maintheme with loop',
 		'show scene black',
-		'test 2 test 2',
 		'm:normal Run, {{player.name}}!, Go where they wont find you!',
 		'show scene away',
-		'Your mother screamed, while keeping the leosapien away',
+		'Your mother screamed, while keeping the leosapien away test 3 test3',
 		'show scene smoke with FadeIn',
 		'The acrid smell of smoke filled your nose, and the heat of the flames prickled at your skin.',
 		'show scene dedo',
