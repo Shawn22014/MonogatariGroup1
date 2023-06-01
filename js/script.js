@@ -217,9 +217,9 @@ monogatari.script ({
 			}
 		},*/
 		// PROLOGUE //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-		'TESTING TESTING',
 		'play music maintheme with loop',
 		'show scene black',
+		'test 2 test 2',
 		'm:normal Run, {{player.name}}!, Go where they wont find you!',
 		'show scene away',
 		'Your mother screamed, while keeping the leosapien away',
