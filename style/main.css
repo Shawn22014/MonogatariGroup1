@@ -19,7 +19,7 @@
 
 /* General Style */
 body {
-
+background-color: white;
 }
 
 /* Simple Button styles*/
@@ -51,6 +51,7 @@ loading-screen {
 
 /* Main Menu Styling */
 [data-screen="main"] {
+
 }
 
 main-menu {
@@ -118,7 +119,7 @@ background-color: grey;
 
 /* Text Box styling */
 [data-component="text-box"] {
-	font-family: 'Roboto', sans-serif;
+
 }
 
 /* Character Name Style */
@@ -211,6 +212,7 @@ input[type=range]::-ms-fill-upper {
 
 	/* Quick Menu Style */
 	[data-component="quick-menu"] {
+		background-color: white;
 
 	}
 

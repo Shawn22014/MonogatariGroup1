@@ -387,9 +387,7 @@ monogatari.script ({
 		}
 
 	],
-	'runagin': [
-		'Hello',
-	],
+
 	//for Copy Paste
 	/*'empty': [
 		'Hello',
@@ -522,7 +520,7 @@ monogatari.script ({
 	'defeat1': [
 		{'Conditional': {
 			'Condition': function(){
-				return (monogatari.storage().player.points == 0);
+				return (monogatari.storage().player.chances == 0);
 			},
 			'True': 'jump death',
 			'False': 'You now only have {{player.chances}} chances left'
@@ -595,7 +593,7 @@ monogatari.script ({
 	'defeat2': [
 		{'Conditional': {
 			'Condition': function(){
-				return (monogatari.storage().player.points == 0);
+				return (monogatari.storage().player.chances == 0);
 			},
 			'True': 'jump death',
 			'False': 'You now only have {{player.chances}} chances left'
@@ -647,7 +645,7 @@ monogatari.script ({
 	'defeat3': [
 		{'Conditional': {
 			'Condition': function(){
-				return (monogatari.storage().player.points == 0);
+				return (monogatari.storage().player.chances == 0);
 			},
 			'True': 'jump death',
 			'False': 'You now only have {{player.chances}} chances left'
@@ -709,9 +707,24 @@ monogatari.script ({
 				},
 				'noyes': {
 					'Text': '>runaway',
-					'Do' : 'jump where'
+					'Do' : 'jump run1'
 				},
 				
+			}
+		}
+
+	],
+	'run1': [
+		'show scene 1.17',
+		'Utilizing your superior dexterity and agility, you sprinted away from the approaching guards with all your might. Every step was calculated, every movement precise, as you skillfully evaded their pursuit.',
+		'Your hybrid traits granted you an advantage, allowing you to navigate through obstacles and vanish into the shadows, leaving the guards empty-handed and unable to capture you. Your escape was a testament to your quick thinking and physical prowess, ensuring your freedom and preserving your quest for vengeance.',
+		{
+			'Choice': {
+				'Dialog': '',
+				'yesno': {
+					'Text': '>End of Chapter 1',
+					'Do' : 'End'
+				},
 			}
 		}
 
@@ -746,7 +759,7 @@ monogatari.script ({
 	'defeat1.2': [
 		{'Conditional': {
 			'Condition': function(){
-				return (monogatari.storage().player.points2 == 0);
+				return (monogatari.storage().player.chances2 == 0);
 			},
 			'True': 'jump death',
 			'False': 'You now only have {{player.chances2}} chances left'
@@ -820,7 +833,7 @@ monogatari.script ({
 	'defeat2.3': [
 		{'Conditional': {
 			'Condition': function(){
-				return (monogatari.storage().player.points2 == 0);
+				return (monogatari.storage().player.chances2 == 0);
 			},
 			'True': 'jump death2',
 			'False': 'You now only have {{player.chances2}} chances left'
@@ -872,7 +885,7 @@ monogatari.script ({
 	'defeat3.2': [
 		{'Conditional': {
 			'Condition': function(){
-				return (monogatari.storage().player.points2 == 0);
+				return (monogatari.storage().player.chances2 == 0);
 			},
 			'True': 'jump death2',
 			'False': 'You now only have {{player.chances2}} chances left'
